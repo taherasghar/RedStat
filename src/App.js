@@ -9,6 +9,7 @@ import Products from "./components/Products";
 import ProductId from "./components/ProductId.js";
 import { Provider } from "react-redux";
 import store from "./app/store.js";
+import "./index.css";
 const router = createBrowserRouter([
   {
     path: "/",
