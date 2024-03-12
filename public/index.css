@@ -1,0 +1,91 @@
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+ li, Link {
+  margin: 0 0 1rem;
+  padding: 0;
+  color: #fff;
+  list-style-type: none;
+  text-align: center;
+}
+p{
+  color: wheat;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0069d9;
+}
+
+input[type="text"], input[type="email"], textarea {
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.5rem;
+  width: 100%;
+  color: black;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+  box-shadow: 0 0 2px 1px #007bff;
+  outline: none;
+}
+
+.welcome-div {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-status {
+  display: flex;
+  flex-direction: row;
+  padding: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+img {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 10px 5px 10px rgba(250, 250, 250, 0.2);
+  margin: 10px;
+}
