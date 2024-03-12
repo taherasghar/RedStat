@@ -7,7 +7,7 @@ const UserStatus = () => {
   const status = useSelector((state) => state.userStatus.status);
   const dispatch = useDispatch();
   const [edit, setEdit] = useState(false);
-  const [newStatus, setNewStatus] = useState(false);
+  const [newStatus, setNewStatus] = useState("");
 
   return (
     <div className="user-status">
@@ -31,7 +31,7 @@ const UserStatus = () => {
         <button
           onClick={() => {
             setEdit(false);
-            dispatch(changeStatus(newStatus));
+            dispatch(changeStatus(!newStatus.length ? status : newStatus));
           }}
         >
           <CheckIcon />
